@@ -11,6 +11,6 @@ public interface BlocoDeNotaService {
 
     List<BlocoDeNota> leRegistro();
 
-    BlocoDeNota lerRemetente(String remetente) throws Exception;
+    List<BlocoDeNota> lerRemetente(String remetente) throws Exception;
 
 }

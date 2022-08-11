@@ -27,7 +27,7 @@ public class BlocoDeNotaController {
     }
 
     @GetMapping("/read/{remetente}")
-    public BlocoDeNota lerRegistroRemetente(@PathVariable("remetente") String remetente) throws Exception{
+    public List<BlocoDeNota> lerRegistroRemetente(@PathVariable("remetente") String remetente) throws Exception{
         return blocoDeNotaService.lerRemetente(remetente);
     }
 

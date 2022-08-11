@@ -31,8 +31,8 @@ public class BlocoDeNotaServiceImpl implements BlocoDeNotaService {
     }
 
     @Override
-    public BlocoDeNota lerRemetente(String remetente) {
-        return (BlocoDeNota) blocoDeNotaRepository.findByRemetente(remetente);
+    public List<BlocoDeNota> lerRemetente(String remetente) throws Exception {
+        return blocoDeNotaRepository.findByRemetente(remetente);
     }
 
 
